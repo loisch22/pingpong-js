@@ -4,41 +4,50 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script type="text/javascript" src="js/pingpong.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
-    <title>Ping Pong</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Barcode+39+Extended+Text|Open+Sans+Condensed:300|Source+Sans+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    <title>Ping Pong Calculator</title>
   </head>
   <body>
-    <h2>Enter any number to get a secret ping pong code</h2>
-    <form id="ping-pong-form">
-      <label for="goal">Enter a number:</label>
-      <input type="number" id="goal">
-      <button type="submit" name="button">Submit</button>
-    </form>
-    <h2>Enter two numbers to add to get a ping pong code</h2>
-    <form id="ping-pong-add">
-      <label for="num1">Enter a number:</label>
-      <input type="number" id="num1">
-      <label for="num2">Enter a number:</label>
-      <input type="number" id="num2">
-      <button type="button" name="button" id="add">Add</button>
-      <button type="button" name="button" id="sub">Subtract</button>
-      <button type="button" name="button" id="multiply">Multiply</button>
-      <button type="button" name="button" id="divide">Divide</button>
-    </form>
-    <!-- <h2>Enter two numbers to subtract to get a ping pong code</h2>
-    <form id="ping-pong-sub">
-      <label for="sub1">Enter a number:</label>
-      <input type="number" id="sub1">
-      <label for="sub2">Enter a number:</label>
-      <input type="number" id="sub2">
-      <button type="submit" name="button">Subtract</button>
-    </form> -->
-    <h2>SIGN UP</h2>
-    <form id="signup">
-      <label for="email">Enter your email:</label>
-      <input type="text" id="email">
-      <button type="submit">Submit</button>
-    </form>
-    <button type="button" name="button" id="clear">Clear</button>
-    <ul id="solution"></ul>
+    <div class="signup">
+      <h2 class="signup-title">SIGN UP</h2>
+      <form id="signup">
+        <label for="email">Enter your email:</label>
+        <input type="text" id="email">
+        <button type="submit" class="btn btn-xs signup-btn">Submit</button>
+      </form>
+    </div>
+    <div class="calculator-content">
+      <h1 class="header">Ping Pong Calculator</h1>
+
+      <div class="container">
+        <h2>Enter two numbers to add to get a ping pong code</h2>
+
+        <form id="ping-pong-add">
+          <label for="num1">Enter a number:</label>
+          <input type="number" id="num1">
+          <label for="num2">Enter a number:</label>
+          <input type="number" id="num2">
+          <br>
+          <button type="button" name="button" id="add" class="btn btn-default calc-btn">+</button>
+          <button type="button" name="button" id="sub" class="btn btn-default calc-btn">-</button>
+          <button type="button" name="button" id="multiply" class="btn btn-default calc-btn">*</button>
+          <button type="button" name="button" id="divide" class="btn btn-default calc-btn">/</button>
+        </form>
+        <!-- <h2>Enter two numbers to subtract to get a ping pong code</h2>
+        <form id="ping-pong-sub">
+          <label for="sub1">Enter a number:</label>
+          <input type="number" id="sub1">
+          <label for="sub2">Enter a number:</label>
+          <input type="number" id="sub2">
+          <button type="submit" name="button">Subtract</button>
+        </form> -->
+        <h2>Your result</h2>
+        <button type="button" name="button" id="clear">Clear</button>
+        <ul id="solution"></ul>
+      </div>
+    </div>
   </body>
 </html>

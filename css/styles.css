@@ -1,0 +1,50 @@
+/*font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Libre Barcode 39 Extended Text', cursive;
+font-family: 'Open Sans Condensed', sans-serif;*/
+body {
+  background-color: #dfe3ee;
+}
+.signup {
+  font-size: 17px;
+  text-align: right;
+  letter-spacing: 2px;
+  margin: 0;
+  padding: 5px 40px 10px 10px;
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color:	#03396c;
+  color: 	#dfe3ee;
+}
+.signup-title {
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+.signup-btn {
+  background-color: transparent;
+  border: solid 1.3px #dfe3ee;
+  border-radius: .5;
+  font-size: 12;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+}
+#email {
+  background-color: #8b9dc3;
+  border: 1px;
+  border-radius: 2px;
+  padding: 3px;
+  letter-spacing: 1px;
+}
+.header {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 3px;
+  margin: 10% 5% 10% 5%;
+}
+.calc-btn {
+  font-size: 20px;
+  padding: 10px 15px 10px 15px;
+  margin: 20px 5px 10px 5px;
+}
+.calculator-content {
+  text-align: center;
+}

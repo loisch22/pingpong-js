@@ -62,7 +62,6 @@ $(document).ready(function() {
   });
   $('#add').click(function(event) {
     event.preventDefault();
-    alert("adding");
     var num1 = parseInt($('#num1').val());
     var num2 = parseInt($('#num2').val());
     var goal = num1 + num2;
@@ -74,7 +73,6 @@ $(document).ready(function() {
   });
   $('#sub').click(function(event) {
     event.preventDefault();
-    alert("subtracting");
     var num1 = parseInt($('#num1').val());
     var num2 = parseInt($('#num2').val());
     var goal = num1 - num2;
@@ -86,7 +84,6 @@ $(document).ready(function() {
   });
   $('#multiply').click(function(event) {
     event.preventDefault();
-    alert("multiplying");
     var num1 = parseInt($('#num1').val());
     var num2 = parseInt($('#num2').val());
     var goal = num1 * num2;
@@ -98,7 +95,6 @@ $(document).ready(function() {
   });
   $('#divide').click(function(event) {
     event.preventDefault();
-    alert("dividing");
     var num1 = parseInt($('#num1').val());
     var num2 = parseInt($('#num2').val());
     var goal = num1 / num2;
@@ -110,7 +106,6 @@ $(document).ready(function() {
   });
   $('#clear').click(function(event) {
     event.preventDefault();
-    alert("clearing");
     $('#solution').empty();
   });
 });
