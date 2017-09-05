@@ -11,4 +11,16 @@ $(document).ready(function() {
       $('#solution').append("<li>" + element + "</li>");
     });
   });
+  $('#ping-pong-add').submit(function() {
+    // event.preventDefault();
+    alert("hello");
+    // var num1 = $('#num1').val();
+    // var num2 = $('#num2').val();
+    // var goal = num1 + num2;
+    // var simpleCalculator = new Calculator("hot pink");
+    // var output = simpleCalculator.pingPong(goal);
+    // output.forEach(function(element) {
+    //   $('#solution').append("<li>" + element + "</li>");
+    // });
+  });
 });
