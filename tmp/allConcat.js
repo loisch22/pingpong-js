@@ -62,7 +62,7 @@ $(document).ready(function() {
   $('#clear').click(function(event) {
     event.preventDefault();
     alert("clearing");
-    $('#solution').removeClass();
+    $('#solution').empty();
   });
 });
 
